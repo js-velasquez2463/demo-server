@@ -1,0 +1,5 @@
+org:
+  mipams:
+    jumbf:
+      demo:
+        image_folder: /tmp/jumbf-tests

@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  miappjava:
+    build:
+      context: .
+      args:
+        JAR_FILE: target/demo-1.0.jar
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./target:/app/target"
+      - "/tmp:/tmp"
+    environment:
+      - JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom
